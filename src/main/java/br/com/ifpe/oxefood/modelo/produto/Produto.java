@@ -26,9 +26,30 @@ public class Produto extends EntidadeAuditavel  {
     private static final long serialVersionUID = -9147515922627050356L;
 
     @Column
-    private String nome_produto;
+    private String codigo;
 
     @Column
-    private String cod_produto;
+    private String titulo;
+
+    @Column
+    private String descricao;
+
+    @Column
+    private double valorUnitario;
+
+    @Column
+    private int tempoEntregaMinimo;
+
+    @Column
+    private int tempoEntregaMaximo;
 
 }
+//TABELA PRODUTO
+/*{
+    "codigo":"5050",
+    "titulo":"haha",
+    "descricao":"...",
+    "valorUnitario":"40.00",
+    "tempoEntregaMinimo":"1",
+    "tempoEntregaMaximo":"10"
+}*/

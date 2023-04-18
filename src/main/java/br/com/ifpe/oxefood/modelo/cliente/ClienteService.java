@@ -9,15 +9,15 @@ import br.com.ifpe.oxefood.util.entity.GenericService;
 
 @Service
 public class ClienteService extends GenericService {
+    
+    @Autowired
+    private ClienteRepository repository;
 
-   @Autowired
-   private ClienteRepository repository;
+    @Transactional
+    public Cliente save(Cliente cliente) {
 
-   @Transactional
-   public Cliente save(Cliente cliente) {
-
-       super.preencherCamposAuditoria(cliente);
-       return repository.save(cliente);
-   }
+        super.preencherCamposAuditoria(cliente);
+        return repository.save(cliente);
+    }
 
 }

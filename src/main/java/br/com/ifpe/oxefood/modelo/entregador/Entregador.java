@@ -30,11 +30,16 @@ public class Entregador extends EntidadeAuditavel  {
     @Column
     private String nome;
 
-    @Column
-    private LocalDate dataNascimento;
-
+    
     @Column
     private String cpf;
+
+   
+    @Column
+    private String rg;
+
+    @Column
+    private LocalDate dataNascimento;
 
     @Column
     private String foneCelular;
@@ -42,4 +47,56 @@ public class Entregador extends EntidadeAuditavel  {
     @Column
     private String foneFixo;
 
+    
+    @Column
+    private int qtdEntregasRealizadas;
+
+    @Column
+    private Double valorFrete;
+
+   
+    @Column
+    private String enderecoRua;
+
+    @Column
+    private String enderecoNumero;
+
+    @Column
+    private String enderecoBairro;
+
+    @Column
+    private String enderecoCidade;
+
+    
+    @Column
+    private String enderecoCep;
+
+
+    @Column
+    private String enferecoUf;
+
+    
+    @Column
+    private String enderecoComplemento;
+
+
+    @Column
+    private boolean ativo;
+
 }
+//TABELA ENTREGADOR
+/*{
+   "nome":"Rafael",
+   "cpf":"8575738373",
+   "rg":"37384859",
+   "dataNascimento":"10/03/2004",
+   "foneCelular":"8636374495",
+   "foneFixo":"93848475",
+   "qtdEntregasRealizadas":"0",
+   "valorFrete":"30.9",
+   "enderecoRua":"rua",
+   "enderecoNumero":"40",
+   "enderecoBairro":"BR",
+   "enderecoCidade":"M",
+   "enderecoCep":"22"
+} */
