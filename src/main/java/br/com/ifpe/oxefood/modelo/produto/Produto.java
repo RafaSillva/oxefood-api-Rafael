@@ -23,33 +23,23 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Produto extends EntidadeAuditavel  {
 
-    private static final long serialVersionUID = -9147515922627050356L;
+   @Column
+   private String codigo;
 
-    @Column
-    private String codigo;
+   @Column
+   private String titulo;
 
-    @Column
-    private String titulo;
+   @Column
+   private String descricao;
 
-    @Column
-    private String descricao;
+   @Column
+   private Double valorUnitario;
 
-    @Column
-    private double valorUnitario;
+   @Column
+   private Integer tempoEntregaMinimo;
 
-    @Column
-    private int tempoEntregaMinimo;
-
-    @Column
-    private int tempoEntregaMaximo;
-
+   @Column
+   private Integer tempoEntregaMaximo;
+  
+   
 }
-//TABELA PRODUTO
-/*{
-    "codigo":"5050",
-    "titulo":"haha",
-    "descricao":"...",
-    "valorUnitario":"40.00",
-    "tempoEntregaMinimo":"1",
-    "tempoEntregaMaximo":"10"
-}*/

@@ -15,34 +15,32 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CompradorRequest {
-    
+
     private String nome;
-
+ 
     private String enderecoComercial;
-
+ 
     private String enderecoResidencial;
+ 
+    private Double comissao;
+ 
+    private Boolean trabalhoHomeOffice;
 
-    private double comissao;
+    private Integer qtdComprasMediasMes;
 
-    private String trabahoHomeOffice;
-
-    private int qtdComprasMediasMes;
-
-    
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate contratadoEm;
 
-    public Comprador build(){
+   public Comprador build() {
 
-        return Comprador.builder()
-        .nome(nome)
-        .enderecoComercial(enderecoComercial)
-        .enderecoResidencial(enderecoResidencial)
-        .comissao(comissao)
-        .trabahoHomeOffice(trabahoHomeOffice)
-        .qtdComprasMediasMes(qtdComprasMediasMes)
-        .contratadoEm(contratadoEm)
-        .build();
-    }
-
+       return Comprador.builder()
+               .nome(nome)
+               .enderecoComercial(enderecoComercial)
+               .enderecoResidencial(enderecoResidencial)
+               .comissao(comissao)
+               .trabalhoHomeOffice(trabalhoHomeOffice)
+               .qtdComprasMediasMes(qtdComprasMediasMes)
+               .contratadoEm(contratadoEm)
+               .build();
+   }
 }

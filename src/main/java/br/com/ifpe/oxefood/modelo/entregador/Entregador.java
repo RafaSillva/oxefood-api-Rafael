@@ -25,78 +25,52 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Entregador extends EntidadeAuditavel  {
 
-    private static final long serialVersionUID = -9147515922627050356L;
+   @Column
+   private String nome;
 
-    @Column
-    private String nome;
+   @Column
+   private String cpf;
 
-    
-    @Column
-    private String cpf;
+   @Column
+   private String rg;
 
-   
-    @Column
-    private String rg;
+   @Column
+   private LocalDate dataNascimento;
 
-    @Column
-    private LocalDate dataNascimento;
+   @Column
+   private String foneCelular;
 
-    @Column
-    private String foneCelular;
+   @Column
+   private String foneFixo;
 
-    @Column
-    private String foneFixo;
+   @Column
+   private Integer qtdEntregasRealizadas;
 
-    
-    @Column
-    private int qtdEntregasRealizadas;
+   @Column
+   private Double valorFrete;
 
-    @Column
-    private Double valorFrete;
+   @Column
+   private String enderecoRua;
 
-   
-    @Column
-    private String enderecoRua;
+   @Column
+   private String enderecoNumero;
 
-    @Column
-    private String enderecoNumero;
+   @Column
+   private String enderecoBairro;
 
-    @Column
-    private String enderecoBairro;
+   @Column
+   private String enderecoCidade;
 
-    @Column
-    private String enderecoCidade;
+   @Column
+   private String enderecoCep;
 
-    
-    @Column
-    private String enderecoCep;
+   @Column
+   private String enderecoUf;
 
+   @Column
+   private String enderecoComplemento;
 
-    @Column
-    private String enferecoUf;
-
-    
-    @Column
-    private String enderecoComplemento;
-
-
-    @Column
-    private boolean ativo;
+   @Column
+   private Boolean ativo;
 
 }
-//TABELA ENTREGADOR
-/*{
-   "nome":"Rafael",
-   "cpf":"8575738373",
-   "rg":"37384859",
-   "dataNascimento":"10/03/2004",
-   "foneCelular":"8636374495",
-   "foneFixo":"93848475",
-   "qtdEntregasRealizadas":"0",
-   "valorFrete":"30.9",
-   "enderecoRua":"rua",
-   "enderecoNumero":"40",
-   "enderecoBairro":"BR",
-   "enderecoCidade":"M",
-   "enderecoCep":"22"
-} */

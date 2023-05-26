@@ -41,12 +41,3 @@ public class Cliente extends EntidadeAuditavel  {
    private String foneFixo;
 
 }
-//TABELA CLIENTE
-/*{
-   "nome":"Rafael",
-   "dataNascimento":"10/03/2004",
-   "cpf":"2231415",
-   "foneCelular":"12991",
-   "foneFixo":"93848475"
-} */
-
